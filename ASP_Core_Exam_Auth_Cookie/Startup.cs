@@ -41,7 +41,7 @@ namespace ASP_Core_Exam_Auth_Cookie
                 .AddCookie(options => //CookieAuthenticationOptions
                 {
                     options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
-                    //options.ExpireTimeSpan
+                    options.ExpireTimeSpan = TimeSpan.FromSeconds(30);
                 });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

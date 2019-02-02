@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP_Core_Exam_Auth_Cookie.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20190202040644_Init")]
+    [Migration("20190202043917_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
